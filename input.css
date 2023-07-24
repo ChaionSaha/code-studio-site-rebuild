@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--primary-color: #185abc;
+	--secondary-color: #b31412;
+}
+
+*,
+*::before,
+*::after {
+	font-family: 'Nunito', sans-serif;
+}
+
+.whatsapp {
+	transition: all 200ms;
+	background: #fff;
+}
+
+.whatsapp:hover {
+	background: linear-gradient(45deg, #075e54, #25d366 45%, #dfdcdc);
+	color: white;
+}
+
+.process-card-circle {
+	background-color: var(--primary-color);
+	transition: background-color 500ms;
+}
+
+.process-card:hover .process-card-circle:nth-of-type(1n) {
+	background-color: var(--secondary-color);
+	transition-delay: calc(n * 2s);
+}
+
+.process-card-circle:not(:first-of-type) {
+	background-color: transparent;
+}
+
+.user-name,
+.user-testimony {
+	transition: all 500ms;
+}
+
+.user:hover .user-testimony {
+	border-color: var(--secondary-color);
+}
+
+.user:hover .user-name {
+	color: var(--secondary-color);
+}
+
+.sector-part i,
+.sector-part span {
+	transition: all 200ms;
+}
+
+.sector-part:hover {
+	& i {
+		color: var(--secondary-color);
+	}
+
+	& span {
+		background: var(--secondary-color);
+	}
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	transition: all 700ms ease-in-out;
+	@apply flex flex-col h-full;
+}
+
+.slider-btn {
+	@apply absolute p-2 px-3 rounded-full hover:bg-primary hover:text-white duration-150 top-[90%] lg:top-[50%] bg-[#FFF4ED] text-primary;
+}
+
+.btn-left {
+	@apply lg:left-[0%] left-[5%];
+}
+.btn-right {
+	@apply lg:right-[0%] right-[70%];
+}
+
+.slide-indicator {
+	@apply w-4 h-4 duration-150 border rounded-full cursor-pointer hover:bg-accent bg-[#185ABC];
+}
+
+.active-indicator {
+	@apply bg-accent;
+}
+
+.gallery {
+	&:hover {
+		.gallery-image-details {
+			@apply opacity-100;
+		}
+	}
+}

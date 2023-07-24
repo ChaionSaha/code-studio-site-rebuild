@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Bootstrap Icon -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+		/>
+
+		<!-- CSS file -->
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Homepage</title>
+	</head>
+	<body class="relative">
+		<!-- Sticky Whatsapp Icon -->
+		<div
+			class="fixed border rounded-full shadow-2xl z-[100] right-[5%] top-[85%]"
+		>
+			<a
+				href="https://www.whatsapp.com/"
+				target="_blank"
+				class="flex items-center justify-center duration-150 rounded-full cursor-pointer hover:shadow-2xl"
+			>
+				<img
+					src="./img/wp-icon.png"
+					class="w-16 xl:w-20 h-fit"
+					style="object-fit: contain"
+				/>
+				<!-- <i class="text-4xl bi bi-whatsapp"> </i> -->
+			</a>
+		</div>
+
+		<!-- Navbar Section -->
+		<div class="container mx-auto">
+			<div class="py-5 navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<label tabindex="0" class="btn btn-ghost lg:hidden">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-5 h-5"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16"
+								/>
+							</svg>
+						</label>
+						<ul
+							tabindex="0"
+							class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52 z-[100]"
+						>
+							<li><a href="./index.html" class="uppercase">Home</a></li>
+							<li>
+								<a href="./aboutUs.html" class="uppercase">About Us</a>
+							</li>
+							<li><a href="./teams.html" class="uppercase">Our Team</a></li>
+							<li>
+								<a href="./portfolio.html" class="uppercase">Portfolio</a>
+							</li>
+							<li><a href="./venture.html" class="uppercase">Venture</a></li>
+							<li><a href="./gallery.html" class="uppercase">Gallery</a></li>
+						</ul>
+					</div>
+					<a class="text-xl normal-case cursor-pointer">
+						<img src="./img/Logo of Code Studio 2.png" alt="Code Studio Logo" />
+					</a>
+				</div>
+				<div class="hidden navbar-center lg:flex">
+					<ul class="px-1 menu menu-horizontal">
+						<li>
+							<a
+								href="./index.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="./aboutUs.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>About Us</a
+							>
+						</li>
+						<li>
+							<a
+								href="./teams.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Our Team</a
+							>
+						</li>
+						<li>
+							<a
+								href="./portfolio.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Portfolio</a
+							>
+						</li>
+						<li>
+							<a
+								href="./venture.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Venture</a
+							>
+						</li>
+						<li>
+							<a
+								href="./gallery.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Gallery</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<a
+						href="./contactUs.html"
+						class="btn btn-outline btn-primary hover:text-white"
+						>Contact Us</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- Hero Section -->
+		<div class="relative">
+			<div
+				class="relative flex min-h-screen hero grow"
+				style="background-image: url('./img/hero-bg.png')"
+			>
+				<div class="w-full text-base-100">
+					<div class="relative w-full py-5 xl:mb-10">
+						<div
+							class="absolute w-full h-full lg:w-3/4 xl:w-2/3 2xl:w-1/2 rounded-e-lg"
+							style="
+								background-color: rgba(255, 255, 255, 0.1);
+								content: '';
+								left: 0;
+								top: 0;
+							"
+						></div>
+						<div class="container p-10 mx-auto xl:p-0">
+							<h1 class="text-5xl font-black">Grow Your Business With Us</h1>
+						</div>
+					</div>
+					<div class="container mx-auto">
+						<p
+							class="w-full p-10 text-xl font-medium capitalize xl:mb-10 xl:p-0 md:w-1/2 lg:w-1/2"
+						>
+							Code Studio is one of the best software companies in the world
+							that builds Mobile and Web Applications to grow business
+							successfully.
+						</p>
+						<div class="flex flex-col p-10 xl:flex-row gap-x-3 xl:p-0 gap-y-10">
+							<a class="text-lg font-normal text-white btn btn-primary"
+								>Learn More</a
+							>
+							<a
+								class="flex px-3 text-lg font-normal text-white bg-transparent border border-transparent border-white rounded-lg cursor-pointer xl:border-transparent btn place-items-center gap-x-2 hover:border-white hover:bg-transparent"
+							>
+								<i class="bi bi-play-circle-fill"></i>Play Video</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Location -->
+			<div
+				class="bottom-0 left-0 flex flex-col items-center justify-around w-full p-5 px-10 mt-10 xl:absolute lg:gap-y-0 lg:flex-row xl:px-0 lg:translate-y-1/2"
+			>
+				<!-- Bangladesh Location Card -->
+				<div
+					class="py-10 mb-5 duration-150 border xl:w-5/12 hover:shadow-xl rounded-xl bg-base-100 xl:mb-0"
+				>
+					<div
+						class="flex flex-wrap items-center h-full gap-4 px-6 justify-evenly"
+					>
+						<div class="items-center avatar">
+							<div class="w-8 mr-2 rounded-full">
+								<img src="./img/bangladesh-logo.png" />
+							</div>
+							<h2 class="text-2xl font-bold card-title text-primary">
+								Bangladesh
+							</h2>
+						</div>
+						<div class="flex flex-col gap-5 xl:flex-row">
+							<div
+								class="relative flex px-5 py-4 font-bold border rounded-lg text-primary"
+								style="border-color: rgba(0, 0, 0, 0.2)"
+							>
+								<span
+									class="absolute px-1 font-normal text-primary bg-base-100"
+									style="top: -20%; left: 5%"
+									>Location</span
+								>
+								<div class="flex text-2xl">
+									<i class="mr-2 bi bi-geo-alt"></i>
+									<p>Rajshahi</p>
+								</div>
+							</div>
+							<div
+								class="relative flex px-5 py-4 font-bold border rounded-lg text-primary"
+								style="border-color: rgba(0, 0, 0, 0.2)"
+							>
+								<span
+									class="absolute px-1 font-normal text-primary bg-base-100"
+									style="top: -20%; left: 5%"
+									>Phone</span
+								>
+								<div class="flex text-2xl">
+									<i class="mr-2 bi bi-telephone"></i>
+									<p>+8801784286885</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- UK location Card -->
+				<div
+					class="py-10 mb-5 duration-150 border xl:w-5/12 hover:shadow-xl bg-base-100 xl:mb-0 rounded-xl"
+				>
+					<div
+						class="flex flex-wrap items-center h-full gap-3 px-6 justify-evenly"
+					>
+						<div class="items-center avatar">
+							<div class="w-8 mr-2 rounded-full">
+								<img src="./img/uk-logo.png" />
+							</div>
+							<h2 class="text-2xl font-bold card-title text-primary">
+								United Kingdom
+							</h2>
+						</div>
+						<div class="flex flex-col gap-5 xl:flex-row">
+							<div
+								class="relative flex px-5 py-4 font-bold border rounded-lg text-accent"
+								style="border-color: rgba(0, 0, 0, 0.2)"
+							>
+								<span
+									class="absolute px-1 font-normal text-accent bg-base-100"
+									style="top: -20%; left: 5%"
+									>Location</span
+								>
+								<div class="flex text-2xl">
+									<i class="mr-2 bi bi-geo-alt"></i>
+									<p>Lotion</p>
+								</div>
+							</div>
+							<div
+								class="relative flex px-5 py-4 font-bold border rounded-lg text-accent"
+								style="border-color: rgba(0, 0, 0, 0.2)"
+							>
+								<span
+									class="absolute px-1 font-normal text-accent bg-base-100"
+									style="top: -20%; left: 5%"
+									>Phone</span
+								>
+								<div class="flex text-2xl">
+									<i class="mr-2 bi bi-telephone"></i>
+									<p>+8801784286885</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Who We Are Section -->
+		<div class="container mx-auto xl:mb-40 xl:mt-40">
+			<div
+				class="flex flex-col items-center w-full bg-base-100 lg:flex-row gap-x-16"
+			>
+				<div class="">
+					<img src="./img/img-1.png" alt="Album" class="w-full" />
+				</div>
+				<div class="flex flex-col p-5 lg:w-1/2 gap-y-9">
+					<h2 class="text-3xl font-bold text-center xl:text-left">
+						Who We Are
+					</h2>
+					<p>
+						Dummy text is text that is used in the publishing industry or by web
+						designers to occupy the space which will later be filled with 'real'
+						content. This is required when, for example, the final text is not
+						yet available. Dummy texts have been in use by typesetters since the
+						16th century. Dummy text is text that is used in the publishing
+						industry or by web designers to occupy the space which will later be
+						filled with 'real' content. This is required when, for example, the
+						final text is not yet available. Dummy texts have been in use by
+						typesetters since the 16th century.Dummy text is text that is used
+						in the publishing industry or by web designers to occupy the space
+						which will later be filled with 'real' content. This is required
+						when, for example, the final text is not yet available. Dummy texts
+						have been in use by typesetters since the 16th century.
+					</p>
+					<div class="flex flex-col">
+						<div class="flex flex-col xl:border-b xl:flex-row">
+							<div class="flex items-center p-3 xl:border-r xl:w-1/2 gap-x-5">
+								<img src="./img/rocket.png" alt="" />
+								<div class="flex flex-col gap-y-2">
+									<h1 class="text-xl font-bold">Quick Delivery</h1>
+									<p class="font-xs text-slate-500">
+										The simplest but robust technology to accompany with you
+									</p>
+								</div>
+							</div>
+							<div class="flex items-center p-3 xl:w-1/2 gap-x-5">
+								<img src="./img/lightning.png" alt="" />
+								<div class="flex flex-col gap-y-2">
+									<h1 class="text-xl font-bold">Better Services</h1>
+									<p class="font-xs text-slate-500">
+										Platform independant business solutions for maximum
+										availability
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="flex flex-col xl:flex-row">
+							<div class="flex items-center p-3 xl:border-r xl:w-1/2 gap-x-5">
+								<img src="./img/coin.png" alt="" />
+								<div class="flex flex-col gap-y-2">
+									<h1 class="text-xl font-bold">Cheaper</h1>
+									<p class="font-xs text-slate-500">
+										Let the world find you on top of others
+									</p>
+								</div>
+							</div>
+							<div class="flex items-center p-3 xl:w-1/2 gap-x-5">
+								<img src="./img/alarm.png" alt="" />
+								<div class="flex flex-col gap-y-2">
+									<h1 class="text-xl font-bold">24/7 Support</h1>
+									<p class="font-xs text-slate-500">
+										Advanced autonomous technologies to make life simple
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Services Section -->
+		<div
+			class="container flex flex-col mx-auto mb-10 xl:mb-40 xl:gap-y-20 gap-y-5"
+		>
+			<div class="flex flex-col items-center text-center gap-y-5">
+				<h1 class="text-3xl font-bold text-center">Our Services</h1>
+				<p class="w-1/2 text-center">
+					Code Studio is one of the best software companies in the world that
+					builds Mobile and Web Applications to grow business successfully.
+				</p>
+			</div>
+			<div class="flex flex-col lg:flex-row gap-x-20 w-">
+				<div
+					class="flex flex-col items-center p-10 xl:w-2/5 gap-y-5 hover:shadow-lg"
+				>
+					<img src="./img/pen.png" />
+					<h1 class="font-bold">UI/UX Design</h1>
+					<p class="text-center">
+						Our designers create visually appealing and user-friendly interfaces
+						that enhance customer engagement and satisfaction.
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-center p-10 xl:w-2/5 gap-y-5 hover:shadow-lg"
+				>
+					<img src="./img/pc.png" />
+					<h1 class="font-bold">Web Development</h1>
+					<p class="text-center">
+						Our skilled developers create customized websites that are
+						responsive, secure, and optimized for search engines.
+					</p>
+				</div>
+				<div
+					class="flex flex-col items-center p-10 xl:w-2/5 gap-y-5 hover:shadow-lg"
+				>
+					<img src="./img/phone.png" />
+					<h1 class="font-bold">Mobile Development</h1>
+					<p class="text-center">
+						We design and develop intuitive mobile apps for iOS and Android that
+						deliver exceptional user experiences.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Fetured In section -->
+		<div class="mb-28 xl:mb-40 bg-primary">
+			<div
+				class="container flex flex-col items-center py-10 mx-auto xl:flex-row gap-y-10"
+			>
+				<div class="flex flex-col mr-10 text-white">
+					<p>We are</p>
+					<h1 class="text-4xl font-bold xl:text-2xl">Featured In</h1>
+				</div>
+				<div
+					class="grid justify-between flex-grow grid-cols-2 gap-10 xl:flex gap-y-7 xl:flex-row"
+					style="overflow: hidden"
+				>
+					<img src="./img/Logo.png" />
+					<img src="./img/Logo-1.png" />
+					<img src="./img/Logo-2.png" />
+					<img src="./img/Logo-3.png" />
+					<img src="./img/Logo-4.png" />
+					<img src="./img/Logo-5.png" />
+				</div>
+			</div>
+		</div>
+
+		<!-- Video Section -->
+		<div class="container min-h-screen mx-auto mb-10 xl:mb-40">
+			<iframe
+				class="w-full h-56 border xl:w-full xl:min-h-screen"
+				src="https://www.youtube.com/embed/aB8Wa_SkX1M"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen
+			></iframe>
+		</div>
+
+		<!-- Process We follow Section  -->
+		<div class="container flex flex-col mx-auto mb-40 xl:gap-y-36">
+			<div
+				class="flex flex-col items-center justify-center p-10 text-center gap-y-5"
+			>
+				<h1 class="text-3xl font-bold">The Process We Follow</h1>
+				<p class="xl:w-1/2">
+					Code Studio is one of the best software companies in the world that
+					builds Mobile and Web Applications to grow business successfully.
+				</p>
+			</div>
+			<div
+				class="flex flex-col justify-between p-5 gap-y-10 xl:flex-row gap-x-20"
+				style="user-select: none"
+			>
+				<div
+					class="flex flex-col p-5 border rounded-md xl:border-0 process-card hover:shadow-xl"
+				>
+					<div class="flex items-center mb-10 gap-x-3">
+						<div
+							class="self-center w-8 h-8 rounded-full process-card-circle"
+						></div>
+
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+					</div>
+					<h1 class="mb-3 text-xl font-bold">Planning</h1>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+				</div>
+				<div
+					class="flex flex-col p-5 border rounded-md xl:border-0 process-card hover:shadow-xl"
+				>
+					<div class="flex items-center mb-10 h-fit gap-x-3">
+						<div
+							class="self-center w-8 h-8 rounded-full process-card-circle"
+						></div>
+
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+					</div>
+					<h1 class="mb-3 text-xl font-bold">Conception</h1>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+				</div>
+				<div
+					class="flex flex-col p-5 border rounded-md xl:border-0 process-card hover:shadow-xl"
+				>
+					<div class="flex items-center mb-10 h-fit gap-x-3">
+						<div
+							class="self-center w-8 h-8 rounded-full process-card-circle"
+						></div>
+
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+					</div>
+					<h1 class="mb-3 text-xl font-bold">Design</h1>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+				</div>
+				<div
+					class="flex flex-col p-5 border rounded-md xl:border-0 process-card hover:shadow-xl"
+				>
+					<div class="flex items-center mb-10 h-fit gap-x-3">
+						<div
+							class="self-center w-8 h-8 rounded-full process-card-circle"
+						></div>
+
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+						<div
+							class="w-1 h-1 rounded-full bg-primary process-card-circle"
+						></div>
+					</div>
+					<h1 class="mb-3 text-xl font-bold">Development</h1>
+					<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- User Compliments -->
+		<div class="container flex flex-col p-10 mx-auto mb-40 xl:gap-y-40">
+			<div class="flex flex-col items-center text-center gap-y-10">
+				<h1 class="text-3xl font-bold">What Our User Says</h1>
+				<p class="xl:w-1/2">
+					Code Studio is one of the best software companies in the world that
+					builds Mobile and Web Applications to grow business successfully.
+				</p>
+			</div>
+			<div class="flex flex-col xl:flex-row gap-x-20 gap-y-10">
+				<div
+					class="flex flex-col p-10 border rounded-lg gap-y-10 user hover:shadow-lg"
+				>
+					<p class="text-justify border-s-4 border-primary ps-5 user-testimony">
+						Code Studio is a leading software development company that creates
+						custom web and mobile solutions. Our team of experts delivers
+						high-quality, innovative software to help businesses grow and thrive
+						in the digital world.
+					</p>
+					<div class="flex items-center gap-x-5">
+						<div class="avatar">
+							<div class="w-24 rounded-full">
+								<img src="./img/user.png" />
+							</div>
+						</div>
+						<div class="flex flex-col">
+							<h1 class="text-xl font-bold text-primary user-name">
+								Chester Fell
+							</h1>
+							<p class="uppercase text-secondary">Customer</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col p-10 border rounded-lg gap-y-10 user hover:shadow-lg"
+				>
+					<p class="text-justify border-s-4 border-primary ps-5 user-testimony">
+						Code Studio is a leading software development company that creates
+						custom web and mobile solutions. Our team of experts delivers
+						high-quality, innovative software to help businesses grow and thrive
+						in the digital world.
+					</p>
+					<div class="flex items-center gap-x-5">
+						<div class="avatar">
+							<div class="w-24 rounded-full">
+								<img src="./img/user.png" />
+							</div>
+						</div>
+						<div class="flex flex-col">
+							<h1 class="text-xl font-bold text-primary user-name">
+								Chester Fell
+							</h1>
+							<p class="uppercase text-secondary">Customer</p>
+						</div>
+					</div>
+				</div>
+				<div
+					class="flex flex-col p-10 border rounded-lg gap-y-10 user hover:shadow-lg"
+				>
+					<p class="text-justify border-s-4 border-primary ps-5 user-testimony">
+						Code Studio is a leading software development company that creates
+						custom web and mobile solutions. Our team of experts delivers
+						high-quality, innovative software to help businesses grow and thrive
+						in the digital world.
+					</p>
+					<div class="flex items-center gap-x-5">
+						<div class="avatar">
+							<div class="w-24 rounded-full">
+								<img src="./img/user.png" />
+							</div>
+						</div>
+						<div class="flex flex-col">
+							<h1 class="text-xl font-bold text-primary user-name">
+								Chester Fell
+							</h1>
+							<p class="uppercase text-secondary">Customer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Technology Stack -->
+		<div class="mb-40 border shadow-md">
+			<div
+				class="container flex flex-col items-center py-10 mx-auto gap-y-10 xl:flex-row"
+			>
+				<div class="flex flex-col mr-10 text-black">
+					<h1 class="text-3xl font-bold">100.00+</h1>
+					<p>technology stack</p>
+				</div>
+				<div
+					class="grid justify-between flex-grow grid-cols-2 gap-10 xl:flex xl:flex-row"
+					style="overflow: hidden"
+				>
+					<img src="./img/Logo 1.png" />
+					<img src="./img/Logo 2.png" />
+					<img src="./img/Logo 3.png" />
+					<img src="./img/Logo 4.png" />
+					<img src="./img/Logo 5.png" />
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer hero section -->
+		<div class="bg-primary">
+			<div class="container py-10 mx-auto text-white">
+				<div class="flex flex-col items-center">
+					<div class="self-center p-10 mb-20 text-2xl xl:w-1/3 xl:p-0">
+						<h1 class="font-bold text-center">
+							Welcome to your digital reality that will rock your world truly at
+							all throughout.
+						</h1>
+					</div>
+					<div
+						class="flex flex-col justify-around mb-20 gap-y-10 xl:flex-row gap-x-40"
+					>
+						<div class="flex flex-col items-center justify-center">
+							<h1 class="font-bold text-7xl">6</h1>
+							<p>Happy Clients</p>
+						</div>
+						<div class="flex flex-col items-center justify-center">
+							<h1 class="font-bold text-7xl">11</h1>
+							<p>Completed Projects</p>
+						</div>
+						<div class="flex flex-col items-center justify-center">
+							<h1 class="font-bold text-7xl">7M</h1>
+							<p>Transactions</p>
+						</div>
+						<div class="flex flex-col items-center justify-center">
+							<h1 class="font-bold text-7xl">6000+</h1>
+							<p>Customers</p>
+						</div>
+					</div>
+					<div class="flex flex-col items-start gap-y-4 xl:flex-row gap-x-20">
+						<p class="flex justify-center gap-x-3">
+							<i class="bi bi-check-circle-fill"></i>
+							Fully Secure
+						</p>
+						<p class="flex justify-center gap-x-3">
+							<i class="bi bi-check-circle-fill"></i>
+							24/7 Support
+						</p>
+						<p class="flex justify-center gap-x-3">
+							<i class="bi bi-check-circle-fill"></i>
+							Done Deal
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer Section -->
+		<div
+			class="container grid grid-cols-1 px-5 pb-10 mx-auto mt-36 gap-y-10 xl:grid-cols-4 gap-x-10"
+		>
+			<div class="flex flex-col gap-y-5">
+				<img
+					src="./img/Logo of Code Studio 2.png"
+					alt=""
+					srcset=""
+					class="w-fit"
+				/>
+				<p>
+					Code Studio is a leading software development company that creates
+					custom web and mobile solutions. Our team of experts delivers
+					high-quality, innovative software to help businesses grow and thrive
+					in the digital world.
+				</p>
+				<div class="flex p-0 gap-x-5">
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-facebook h-min"></i>
+					</a>
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-instagram h-min"></i>
+					</a>
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-twitter h-min"></i>
+					</a>
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-linkedin h-min"></i>
+					</a>
+				</div>
+			</div>
+			<div class="flex xl:justify-center">
+				<div class="flex flex-col gap-y-5">
+					<h3 class="text-2xl font-bold">Menu</h3>
+					<ul class="flex flex-col gap-y-1">
+						<li><a href="./index.html" class="hover:text-primary">Home</a></li>
+						<li>
+							<a href="./aboutUs.html" class="hover:text-primary">About Us</a>
+						</li>
+						<li>
+							<a href="./portfolio.html" class="hover:text-primary">Our Work</a>
+						</li>
+						<li>
+							<a href="./contactUs.html" class="hover:text-primary"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="flex flex-col gap-y-5">
+				<h3 class="text-2xl font-bold">Bangladesh</h3>
+				<div class="flex flex-col font-semibold gap-y-3">
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-envelope-open-fill"></i>
+						codestudio4@gmail.com
+					</p>
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-headset"></i>
+						+880 1784286885
+					</p>
+					<p class="flex items-center w-3/4 gap-x-4">
+						<i class="bi bi-geo-alt-fill"></i>
+						Baliapukur, kajla, Rajshahi Bangladesh
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col gap-y-5">
+				<h3 class="text-2xl font-bold">United Kingdom</h3>
+				<div class="flex flex-col font-semibold gap-y-3">
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-envelope-open-fill"></i>
+						codestudio4@gmail.com
+					</p>
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-headset"></i>
+						+880 1784286885
+					</p>
+					<p class="flex items-center w-3/4 gap-x-4">
+						<i class="bi bi-geo-alt-fill"></i>
+						Baliapukur, kajla, Rajshahi Bangladesh
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Script Section -->
+		<script src="./script.js"></script>
+	</body>
+</html>

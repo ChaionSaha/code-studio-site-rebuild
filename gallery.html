@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Bootstrap Icon -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+		/>
+
+		<!-- CSS file -->
+		<link rel="stylesheet" href="./style.css" />
+
+		<title>Gallery</title>
+	</head>
+	<body class="relative">
+		<!-- Navbar Section -->
+		<div class="container mx-auto">
+			<div class="py-5 navbar bg-base-100">
+				<div class="navbar-start">
+					<div class="dropdown">
+						<label tabindex="0" class="btn btn-ghost lg:hidden">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								class="w-5 h-5"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke="currentColor"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									stroke-width="2"
+									d="M4 6h16M4 12h8m-8 6h16"
+								/>
+							</svg>
+						</label>
+						<ul
+							tabindex="0"
+							class="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
+						>
+							<li><a href="./index.html" class="uppercase">Home</a></li>
+							<li>
+								<a href="./aboutUs.html" class="uppercase">About Us</a>
+							</li>
+							<li><a href="./teams.html" class="uppercase">Our Team</a></li>
+							<li>
+								<a href="./portfolio.html" class="uppercase">Portfolio</a>
+							</li>
+							<li><a href="./venture.html" class="uppercase">Venture</a></li>
+							<li><a href="./gallery.html" class="uppercase">Gallery</a></li>
+						</ul>
+					</div>
+					<a class="text-xl normal-case cursor-pointer">
+						<img src="./img/Logo of Code Studio 2.png" alt="Code Studio Logo" />
+					</a>
+				</div>
+				<div class="hidden navbar-center lg:flex">
+					<ul class="px-1 menu menu-horizontal">
+						<li>
+							<a
+								href="./index.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Home</a
+							>
+						</li>
+						<li>
+							<a
+								href="./aboutUs.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>About Us</a
+							>
+						</li>
+						<li>
+							<a
+								href="./teams.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Our Team</a
+							>
+						</li>
+						<li>
+							<a
+								href="./portfolio.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Portfolio</a
+							>
+						</li>
+						<li>
+							<a
+								href="./venture.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Venture</a
+							>
+						</li>
+						<li>
+							<a
+								href="./gallery.html"
+								class="uppercase hover:text-primary hover:bg-white"
+								>Gallery</a
+							>
+						</li>
+					</ul>
+				</div>
+				<div class="navbar-end">
+					<a
+						href="./contactUs.html"
+						class="btn btn-outline btn-primary hover:text-white"
+						>Contact Us</a
+					>
+				</div>
+			</div>
+		</div>
+
+		<!-- Banner Section -->
+		<div class="flex items-center justify-center h-48 bg-primary">
+			<h1 class="text-4xl font-bold text-white">Gallery</h1>
+		</div>
+
+		<!-- Hero section -->
+		<div
+			class="container flex flex-col items-center p-5 mx-auto mt-10 lg:mt-28 xl:p-0"
+		>
+			<div class="flex flex-col items-center text-center xl:w-1/2 gap-y-3">
+				<h3 class="text-3xl font-bold">Our Photo Gallery</h3>
+				<p class="">
+					Code Studio is one of the best software companies in the world that
+					builds Mobile and Web Applications to grow business successfully.
+				</p>
+			</div>
+			<!-- slider section -->
+			<div
+				class="w-full relative h-[30vh] lg:h-[60vh] overflow-x-hidden mt-10 lg:mt-20"
+			>
+				<div class="w-full h-full overflow-x-hidden lg:px-0 slide-container">
+					<div class="items-center justify-center h-full slide">
+						<img
+							src="./img/slider-1.png"
+							style="object-fit: cover"
+							class="h-fit"
+							alt=""
+						/>
+					</div>
+					<div class="items-center justify-center slide">
+						<img
+							src="./img/slider-1.png"
+							style="object-fit: cover"
+							class="w-fit"
+							alt=""
+						/>
+					</div>
+					<div class="items-center justify-center slide">
+						<img
+							src="./img/slider-1.png"
+							style="object-fit: cover"
+							class="w-fit"
+							alt=""
+						/>
+					</div>
+					<div class="items-center justify-center slide">
+						<img
+							src="./img/slider-1.png"
+							style="object-fit: cover"
+							class="w-fit"
+							alt=""
+						/>
+					</div>
+					<div class="items-center justify-center slide">
+						<img
+							src="./img/slider-1.png"
+							style="object-fit: cover"
+							class="w-fit"
+							alt=""
+						/>
+					</div>
+				</div>
+			</div>
+			<div
+				class="flex justify-center mt-5 lg:mt-10 gap-x-4 slide-indicator-container"
+			></div>
+		</div>
+
+		<!-- gallery section -->
+		<div
+			class="container grid px-5 mx-auto gap-y-5 lg:grid-cols-4 lg:gap-x-20 lg:gap-y-1 mt-28 lg:px-0"
+		>
+			<div class="relative gallery">
+				<img src="./img/gallery-1.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-2.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-3.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-4.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-5.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-6.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-7.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-8.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-9.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-10.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-11.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="relative gallery">
+				<img src="./img/gallery-12.png" alt="" />
+				<div
+					class="absolute bottom-0 flex w-full h-full duration-150 opacity-0 gallery-image-details"
+					style="
+						background: linear-gradient(
+							to top,
+							rgba(0, 0, 0, 0.5),
+							transparent
+						);
+					"
+				>
+					<div class="flex self-end py-3 text-white gap-x-4">
+						<img src="./img/smal-map.png" alt="" />
+						<div class="flex flex-col gap-y-1">
+							<p class="text-xl font-bold">Dakhla</p>
+							<p>Marocco, Africa</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Lets collaborate section -->
+		<div class="container flex flex-col px-5 mx-auto mt-36 lg:px-0 gap-y-10">
+			<div class="flex justify-between">
+				<div class="flex flex-col">
+					<h2 class="text-4xl font-extrabold">Let's Collaborate</h2>
+					<p class="text-[#777]">
+						Lorem Ipsum is simply dummy text of the printing .
+					</p>
+				</div>
+				<!-- <div class="flex self-center gap-x-3">
+					<button
+						class="border rounded-full px-2 py-1 z-[100] bg-primary text-white hover:bg-accent duration-150"
+						id="prev"
+					>
+						<i class="text-2xl bi bi-chevron-left"></i>
+					</button>
+					<button
+						class="z-[100] border rounded-full px-2 py-1 bg-primary text-white hover:bg-accent duration-150"
+						id="next"
+					>
+						<i class="text-2xl bi bi-chevron-right"></i>
+					</button>
+				</div> -->
+			</div>
+			<!-- slider section -->
+			<div class="flex flex-col gap-y-10">
+				<div
+					class="flex rounded-none gap-x-5 carousel carousel-container"
+					style="overflow-x: auto"
+				>
+					<div class="carousel-item">
+						<img src="./img/colab-1.png" alt="Burger" />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/colab-2.png" alt="Burger" />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/colab-3.png" alt="Burger" />
+					</div>
+				</div>
+
+				<p class="font-bold">Let's Collaborate</p>
+				<div
+					class="flex rounded-none gap-x-5 carousel carousel-container"
+					style="overflow-x: auto"
+				>
+					<div class="carousel-item">
+						<img src="./img/colab-4.png" alt="Burger" />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/colab-5.png" alt="Burger" />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/colab-6.png" alt="Burger" />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/colab-7.png" alt="Burger" />
+					</div>
+					<div class="carousel-item">
+						<img src="./img/colab-8.png" alt="Burger" />
+					</div>
+				</div>
+			</div>
+
+			<a
+				href=""
+				class="self-center mt-10 normal-case text-primary btn btn-ghost"
+				>View More</a
+			>
+		</div>
+
+		<!-- Footer Section -->
+		<div
+			class="container grid grid-cols-1 px-5 pb-10 mx-auto mt-36 gap-y-10 xl:grid-cols-4 gap-x-10"
+		>
+			<div class="flex flex-col gap-y-5">
+				<img
+					src="./img/Logo of Code Studio 2.png"
+					alt=""
+					srcset=""
+					class="w-fit"
+				/>
+				<p>
+					Code Studio is a leading software development company that creates
+					custom web and mobile solutions. Our team of experts delivers
+					high-quality, innovative software to help businesses grow and thrive
+					in the digital world.
+				</p>
+				<div class="flex p-0 gap-x-5">
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-facebook h-min"></i>
+					</a>
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-instagram h-min"></i>
+					</a>
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-twitter h-min"></i>
+					</a>
+					<a
+						href="#"
+						class="p-2 px-3 duration-200 border rounded-full hover:shadow-lg hover:border-transparent"
+					>
+						<i class="text-2xl rounded-full bi bi-linkedin h-min"></i>
+					</a>
+				</div>
+			</div>
+			<div class="flex xl:justify-center">
+				<div class="flex flex-col gap-y-5">
+					<h3 class="text-2xl font-bold">Menu</h3>
+					<ul class="flex flex-col gap-y-1">
+						<li><a href="./index.html" class="hover:text-primary">Home</a></li>
+						<li>
+							<a href="./aboutUs.html" class="hover:text-primary">About Us</a>
+						</li>
+						<li>
+							<a href="./portfolio.html" class="hover:text-primary">Our Work</a>
+						</li>
+						<li>
+							<a href="./contactUs.html" class="hover:text-primary"
+								>Contact Us</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="flex flex-col gap-y-5">
+				<h3 class="text-2xl font-bold">Bangladesh</h3>
+				<div class="flex flex-col font-semibold gap-y-3">
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-envelope-open-fill"></i>
+						codestudio4@gmail.com
+					</p>
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-headset"></i>
+						+880 1784286885
+					</p>
+					<p class="flex items-center w-3/4 gap-x-4">
+						<i class="bi bi-geo-alt-fill"></i>
+						Baliapukur, kajla, Rajshahi Bangladesh
+					</p>
+				</div>
+			</div>
+			<div class="flex flex-col gap-y-5">
+				<h3 class="text-2xl font-bold">United Kingdom</h3>
+				<div class="flex flex-col font-semibold gap-y-3">
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-envelope-open-fill"></i>
+						codestudio4@gmail.com
+					</p>
+					<p class="flex items-center gap-x-4">
+						<i class="bi bi-headset"></i>
+						+880 1784286885
+					</p>
+					<p class="flex items-center w-3/4 gap-x-4">
+						<i class="bi bi-geo-alt-fill"></i>
+						Baliapukur, kajla, Rajshahi Bangladesh
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			'use strict';
+
+			const slideContainer = document.querySelectorAll('.slide-container');
+			const slides = document.querySelectorAll('.slide');
+
+			slideContainer.forEach((sd) => {
+				const indicatorContainer = [
+					...sd.parentElement.parentElement.children,
+				].filter((a) => a.classList.contains('slide-indicator-container'))[0];
+				[...sd.children]
+					.filter((e) => e.classList.contains('slide'))
+					.forEach((slide, index) => {
+						slide.style.transform = `translateX(${index * 100}%)`;
+						let indicator = document.createElement('div');
+						indicator.classList.add('slide-indicator');
+						indicator.dataset.target = index;
+						indicatorContainer.appendChild(indicator);
+					});
+				const indicator = document.querySelectorAll('.slide-indicator');
+
+				const gotoSlide = (slideNo) => {
+					slides.forEach((slide, index) => {
+						slide.style.transform = `translateX(${(index - slideNo) * 100}%)`;
+					});
+				};
+
+				indicator &&
+					indicator.forEach((ind, index) => {
+						if (index == 0) ind.classList.add('active-indicator');
+						ind.addEventListener('click', (e) => {
+							gotoSlide(e.target.dataset.target);
+							indicator.forEach((i) => i.classList.remove('active-indicator'));
+							e.target.classList.add('active-indicator');
+						});
+					});
+			});
+
+			const carouselContainer = document.querySelector('.carousel-container');
+			const prevBtn = document.querySelector('#prev');
+			const nextBtn = document.querySelector('#next');
+
+			console.log(
+				`carouselContainer.offsetWidth:${
+					carouselContainer.offsetWidth
+				}, carouselContainer.clientWidth: ${
+					carouselContainer.getBoundingClientRect().width
+				}`
+			);
+
+			nextBtn.addEventListener('click', (e) => {
+				carouselContainer.scroll({
+					top: 0,
+					left: scrollX + (carouselContainer.scrollWidth * 10) / 100,
+					behavior: 'smooth',
+				});
+			});
+			prevBtn.addEventListener('click', (e) => {
+				carouselContainer.scroll({
+					top: 0,
+					left: scrollX - (carouselContainer.scrollWidth * 10) / 100,
+					behavior: 'smooth',
+				});
+			});
+		</script>
+
+		<!-- Script Section -->
+		<script src="../script.js"></script>
+	</body>
+</html>
