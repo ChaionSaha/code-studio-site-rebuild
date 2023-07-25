@@ -143,7 +143,7 @@
 		<!-- Hero Section -->
 		<div class="relative">
 			<div
-				class="relative flex min-h-screen hero grow"
+				class="relative flex min-h-screen lg:min-h-[77vh] hero grow"
 				style="background-image: url('./img/hero-bg.png')"
 			>
 				<div class="w-full text-base-100">
@@ -183,12 +183,13 @@
 				</div>
 			</div>
 			<!-- Location -->
+			<!-- flex flex-col items-center justify-around -->
 			<div
-				class="bottom-0 left-0 flex flex-col items-center justify-around w-full p-5 px-10 mt-10 xl:absolute lg:gap-y-0 lg:flex-row xl:px-0 lg:translate-y-1/2"
+				class="bottom-0 left-1/2 translate-x-[-50%] grid lg:grid-cols-2 w-full p-5 px-10 mt-10 xl:absolute lg:gap-y-0 lg:flex-row lg:px-20 lg:translate-y-[40%] gap-x-10"
 			>
 				<!-- Bangladesh Location Card -->
 				<div
-					class="py-10 mb-5 duration-150 border xl:w-5/12 hover:shadow-xl rounded-xl bg-base-100 xl:mb-0"
+					class="py-10 mb-5 duration-150 shadow-sm rounded-xl bg-base-100 xl:mb-0"
 				>
 					<div
 						class="flex flex-wrap items-center h-full gap-4 px-6 justify-evenly"
@@ -236,7 +237,7 @@
 
 				<!-- UK location Card -->
 				<div
-					class="py-10 mb-5 duration-150 border xl:w-5/12 hover:shadow-xl bg-base-100 xl:mb-0 rounded-xl"
+					class="py-10 mb-5 duration-150 shadow-sm bg-base-100 xl:mb-0 rounded-xl"
 				>
 					<div
 						class="flex flex-wrap items-center h-full gap-3 px-6 justify-evenly"
@@ -427,9 +428,9 @@
 		</div>
 
 		<!-- Video Section -->
-		<div class="container min-h-screen mx-auto mb-10 xl:mb-40">
+		<div class="container px-5 mx-auto mb-10 border xl:mb-40 lg:px-0">
 			<iframe
-				class="w-full h-56 border xl:w-full xl:min-h-screen"
+				class="w-full border h-[500px] lg:h-[769px]"
 				src="https://www.youtube.com/embed/aB8Wa_SkX1M"
 				title="YouTube video player"
 				frameborder="0"
@@ -671,7 +672,7 @@
 		</div>
 
 		<!-- Technology Stack -->
-		<div class="mb-40 border shadow-md">
+		<div class="mb-10 border shadow-md">
 			<div
 				class="container flex flex-col items-center py-10 mx-auto gap-y-10 xl:flex-row"
 			>
